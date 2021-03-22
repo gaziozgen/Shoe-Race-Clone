@@ -8,12 +8,12 @@ public class ShoeRaceLevel : LevelManager
     private new void Awake()
     {
         base.Awake();
-
-
     }
+
     public override void FinishLevel(bool success)
     {
         print("finish level");
+        GameManager.Instance.FinishLevel(success);
     }
 
     public override void StartLevel()
